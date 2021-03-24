@@ -120,7 +120,7 @@ busy_spinner <- function(spin = "double-bounce",
   position <- match.arg(position)
   style <- switch(
     EXPR = position,
-    "top-right" = sprintf("top:%s; right:%s;", marg1, marg2),
+    "top-right" = sprintf("position: absolute; top:%s; right:%s;", marg1, marg2),
     "top-left" = sprintf("top:%s; left:%s;", marg1, marg2),
     "bottom-right" = sprintf("bottom:%s; right:%s;", marg1, marg2),
     "bottom-left" = sprintf("bottom:%s; left:%s;", marg1, marg2),
